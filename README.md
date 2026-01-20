@@ -1,16 +1,24 @@
-# React + Vite
+# MiniDrive – Cloud-Based File Storage System (Mini Google Drive)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MiniDrive is a cloud-based file storage application inspired by Google Drive.  
+It allows users to securely upload, download, and manage files using cloud-native architecture and AWS services.  
+The project is designed to demonstrate strong fundamentals of **Cloud Computing**, **Backend Development**, and **Security**, making it suitable for academic projects and placement interviews (TCS Digital).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- User Registration and Login with **JWT Authentication**
+- Secure File Upload, Download, and Delete functionality
+- **AWS S3** for scalable cloud object storage
+- **AWS EC2** for hosting Spring Boot backend
+- **AWS RDS (MySQL)** for managed relational database
+- File download using **pre-signed S3 URLs**
+- File size and file type validation (PDF, JPG, PNG)
+- User-wise file isolation (Multi-tenant architecture)
+- Clean separation of compute, storage, and metadata layers
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🏗️ System Architecture
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
