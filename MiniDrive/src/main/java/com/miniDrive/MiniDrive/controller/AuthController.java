@@ -1,6 +1,5 @@
 package com.miniDrive.MiniDrive.controller;
 
-
 import com.miniDrive.MiniDrive.dto.LoginRequest;
 import com.miniDrive.MiniDrive.dto.RegisterRequest;
 import com.miniDrive.MiniDrive.service.AuthService;
@@ -8,9 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin(origins = "http://localhost:5173")
 public class AuthController {
-
 
     private final AuthService authService;
 
